@@ -12,7 +12,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "umi-request": "^1.2.18"
   },
   "scripts": {
     "mock": "yarn json-server ./mock/index.js -p 3001",

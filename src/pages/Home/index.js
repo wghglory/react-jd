@@ -1,13 +1,26 @@
 import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 
-// test services, todo: call action to fetch data
-import { getHomeCarouselRequest } from '../../services/home';
+import { getHomeCarousel } from '../../action/homeAction';
 
-export default function Home() {
+function Home(props) {
+  const { home, getHomeCarousel } = props;
+
   useEffect(() => {
-    getHomeCarouselRequest().then((res) => console.log(res));
+    getHomeCarousel();
     return () => {};
   }, []);
 
+  console.log(home);
+
   return <div>Home</div>;
 }
+
+export default connect(
+  (state) => {
+    return { home: state.home };
+  },
+  {
+    getHomeCarousel,
+  },
+)(Home);

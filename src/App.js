@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 
+import './utils/flexible.js';
+
 import RouterConfig from './pages/RouteConfig';
 
 function App() {

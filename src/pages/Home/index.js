@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { getHomeCarousel } from '../../action/homeAction';
 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 function Home(props) {
   const { home, getHomeCarousel } = props;
@@ -19,6 +20,7 @@ function Home(props) {
     <div>
       <Header></Header>
       Home
+      <Footer></Footer>
     </div>
   );
 }

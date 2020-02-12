@@ -5,21 +5,22 @@ import { getHomeCarousel } from '../../action/homeAction';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Carousel from '../../components/Carousel';
 
 function Home(props) {
-  const { home, getHomeCarousel } = props;
+  const { data, getHomeCarousel } = props;
+
+  const { counter, homeCarousel, mallNav } = data;
 
   useEffect(() => {
     getHomeCarousel();
     return () => {};
   }, []);
 
-  console.log(home);
-
   return (
     <div>
       <Header></Header>
-      Home
+      <Carousel data={homeCarousel}></Carousel>
       <Footer></Footer>
     </div>
   );
@@ -27,7 +28,7 @@ function Home(props) {
 
 export default connect(
   (state) => {
-    return { home: state.home };
+    return { data: state.home };
   },
   {
     getHomeCarousel,

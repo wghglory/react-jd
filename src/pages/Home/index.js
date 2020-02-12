@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import { getHomeCarousel } from '../../action/homeAction';
 
+import Header from '../../components/Header';
+
 function Home(props) {
   const { home, getHomeCarousel } = props;
 
@@ -13,7 +15,12 @@ function Home(props) {
 
   console.log(home);
 
-  return <div>Home</div>;
+  return (
+    <div>
+      <Header></Header>
+      Home
+    </div>
+  );
 }
 
 export default connect(

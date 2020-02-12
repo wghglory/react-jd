@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 // import logo from './logo.svg';
 import './App.css';
+import './static/iconfont/iconfont.css';
 
 import './utils/flexible.js';
 

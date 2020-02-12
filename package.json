@@ -17,7 +17,7 @@
   },
   "scripts": {
     "mock": "yarn json-server ./mock/index.js -p 3001",
-    "start": "react-scripts start",
+    "start": "yarn mock & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

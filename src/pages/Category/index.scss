@@ -1,0 +1,15 @@
+.category {
+  position: relative;
+
+  $w: 100px;
+
+  .firstCategories {
+    position: fixed;
+    left: 0;
+    width: $w;
+  }
+
+  .secondCategories {
+    margin-left: $w;
+  }
+}

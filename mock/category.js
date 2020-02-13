@@ -42,6 +42,7 @@ const getFirstCategories = [
     title: '女装',
   },
 ];
+
 const getSecondCategories = [
   {
     title: '热门分类',

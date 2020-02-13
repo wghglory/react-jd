@@ -6,7 +6,7 @@ export default function ProductItem(props) {
   const { data } = props;
   const { img, title, price, tags } = data;
   return (
-    <div className='node'>
+    <div className='product'>
       <div className='imgBox'>
         <img src={img} alt='...' />
       </div>

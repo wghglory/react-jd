@@ -1,7 +1,7 @@
 var Mock = require('mockjs');
 var home = require('./home');
 var user = require('./user');
-var search = require('./search');
+var category = require('./category');
 var product = require('./product');
 
 function successWrap(obj) {
@@ -25,7 +25,7 @@ module.exports = () => {
   // 使用 Mock
   const homeMockData = home();
   const userMockData = user();
-  const searchMockData = search();
+  const categoryMockData = category();
   const productMockData = product();
 
   var mockData = Mock.mock({
@@ -36,8 +36,8 @@ module.exports = () => {
     getUserInfo: successWrap(userMockData.getUserInfo),
     login: successWrap(userMockData.login),
     logout: successWrap(userMockData.logout),
-    getFirstCategories: successWrap(searchMockData.getFirstCategories),
-    getSecondCategories: successWrap(searchMockData.getSecondCategories),
+    getFirstCategories: successWrap(categoryMockData.getFirstCategories),
+    getSecondCategories: successWrap(categoryMockData.getSecondCategories),
     // product
     getProducts: successWrap(productMockData.getProducts),
   });

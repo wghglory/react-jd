@@ -1,4 +1,4 @@
-import { getFirstCategoriesRequest, getSecondCategoriesRequest } from '../services/search';
+import { getFirstCategoriesRequest, getSecondCategoriesRequest } from '../services/category';
 
 export const getFirstCategories = (payload) => (dispatch) => {
   getFirstCategoriesRequest().then((res = {}) => {

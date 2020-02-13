@@ -9,8 +9,6 @@ export default function Header(props) {
     history.goBack();
   };
 
-  console.log(history, children);
-
   return (
     <header className='header'>
       {history ? (

@@ -24,7 +24,7 @@ function Home(props) {
     getHomeCarousel();
     getMall();
     return () => {};
-  }, []);
+  }, [getHomeCarousel, getMall]);
 
   return (
     <DefaultLayout title='多快好省，购物上京东！' shortIcon='//m.jd.com/favicon.ico'>
@@ -44,7 +44,7 @@ function Home(props) {
           <Mall data={mall} />
         </section>
 
-        <img src={homeOther} style={{ width: '100%' }} />
+        <img src={homeOther} style={{ width: '100%' }} alt='...here' />
       </div>
     </DefaultLayout>
   );

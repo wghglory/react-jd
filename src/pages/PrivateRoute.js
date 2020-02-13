@@ -5,9 +5,6 @@ import { connect } from 'react-redux';
 //import { getUserInfo } from '../action/loginAction'
 
 class PrivateRoute extends Component {
-  constructor(props) {
-    super(props);
-  }
   /* componentDidMount() {
     this.props.getUserInfo()
   } */

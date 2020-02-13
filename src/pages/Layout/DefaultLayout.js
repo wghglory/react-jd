@@ -21,9 +21,6 @@ const menu = [
   },
 ];
 export default class DefaultLayout extends Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     const { title = '京东商城', shortIcon = '//www.jd.com/favicon.ico' } = this.props;
     document.title = title;

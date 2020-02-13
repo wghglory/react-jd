@@ -16,7 +16,7 @@ function Image(props) {
   const { src } = data;
   return (
     <div className={'image' + (active ? ' active' : '')}>
-      <img src={src} />
+      <img src={src} alt='...here' />
     </div>
   );
 }

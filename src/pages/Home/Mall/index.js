@@ -19,7 +19,7 @@ function Nav(props) {
   return (
     <li className={styles.nav}>
       <a href={link}>
-        <img className={styles.navIcon} src={icon} />
+        <img className={styles.navIcon} src={icon} alt='...here' />
         <div className={styles.title}>{title}</div>
       </a>
     </li>

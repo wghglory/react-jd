@@ -8,6 +8,8 @@ const loginReducer = (state = { ...initialState }, action) => {
     case 'LOGIN':
     case 'GET_USER_INFO':
       return { ...state, userInfo: action.state, isAuthenticated: action.state.id !== null ? true : false };
+    case 'LOGOUT':
+      return initialState;
     default:
       return state;
   }

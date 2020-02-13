@@ -3,7 +3,7 @@ import { loginRequest, getUserInfoRequest } from '../services/login';
 export const loginPost = (payload) => (dispatch) => {
   loginRequest().then((res = {}) => {
     dispatch({
-      type: 'login',
+      type: 'LOGIN',
       state: res.data || { id: null },
     });
   });
@@ -12,7 +12,7 @@ export const loginPost = (payload) => (dispatch) => {
 export const getUserInfo = (payload) => (dispatch) => {
   getUserInfoRequest().then((res = {}) => {
     dispatch({
-      type: 'userInfo',
+      type: 'GET_USER_INFO',
       state: res.data || { id: null },
     });
   });

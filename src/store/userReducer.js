@@ -5,9 +5,9 @@ const initialState = {
 
 const loginReducer = (state = { ...initialState }, action) => {
   switch (action.type) {
-    case 'login':
-    case 'userInfo':
-      return { ...state, userInfo: action.state, isAuthenticated: action.state.id != null ? true : false };
+    case 'LOGIN':
+    case 'GET_USER_INFO':
+      return { ...state, userInfo: action.state, isAuthenticated: action.state.id !== null ? true : false };
     default:
       return state;
   }

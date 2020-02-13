@@ -1,14 +1,13 @@
 const initialState = {
-  counter: 0,
   homeCarousel: [],
-  mallNav: [],
+  mall: [],
 };
 const homeReducer = (state = { ...initialState }, action) => {
   switch (action.type) {
-    case 'homeCarousel':
+    case 'GET_CAROUSEL':
       return { ...state, homeCarousel: action.state };
-    case 'mallNav':
-      return { ...state, mallNav: action.state };
+    case 'GET_MALL':
+      return { ...state, mall: action.state };
     default:
       return state;
   }

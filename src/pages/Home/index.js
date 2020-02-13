@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 
-import { getHomeCarousel } from '../../action/homeAction';
+import { getHomeCarousel, getMall } from '../../action/homeAction';
 
 import DefaultLayout from '../Layout/DefaultLayout';
 
@@ -11,16 +11,18 @@ import styles from './index.module.scss'; // must be xx.module.scss
 import homeOther from './homeOther.png';
 
 import SearchInput from './SearchInput';
+import Mall from './Mall';
 
 function Home(props) {
-  const { data, getHomeCarousel, user, history } = props;
+  const { data, getHomeCarousel, getMall, user, history } = props;
 
-  const { counter, homeCarousel, mallNav } = data;
+  const { homeCarousel, mall = [] } = data;
 
   const [showSearchPage, setShowSearchPage] = useState(false);
 
   useEffect(() => {
     getHomeCarousel();
+    getMall();
     return () => {};
   }, []);
 
@@ -37,6 +39,11 @@ function Home(props) {
         <section className={styles.part1}>
           <Carousel data={homeCarousel} />
         </section>
+
+        <section className={styles.part2}>
+          <Mall data={mall} />
+        </section>
+
         <img src={homeOther} style={{ width: '100%' }} />
       </div>
     </DefaultLayout>
@@ -49,5 +56,6 @@ export default connect(
   },
   {
     getHomeCarousel,
+    getMall,
   },
 )(Home);

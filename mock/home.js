@@ -21,7 +21,7 @@ const getHomeCarousel = [
       '//ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9wcm8ubS5qZC5jb20vbWFsbC9hY3RpdmUvM2hnaFFYVHBUWlUxS0FvTlJSVUc0RU41WmFSUi9pbmRleC5odG1s&amp;log=jejvTQzPq4z0ZfSWjQRJdFnp6WjC27oqD4lCfKdSpxAIjl1XSK7Tu3AknWY2zXdV603O4oTCDxNwa80WX2Gy1Ypa2NY5Tb6rqqTdqnIdA26Qv1sGVQFZLRLviO5Myp1XphbbZyPdkFv5SiCSPmkYDwJwYfhiTRID_cQ_dfKNTkW2ezgQyztLIvoO2aGboxbmJXmsYjWkn-JAQ5qHDzeGcEae1-rNUU_P-E09mgI3bdoRcW64HnUruTvQc9gPFCx4OSlPOXbJQvZZ-XO-gUuzcW38CQfZYLKYCDWIEo_dh22vOzrKSnTIy9x_HawIy4QAcI1oe5J1eL8UDfZmO6j2BhIWjrouNYg1hsMCNZDrTY4Zj9XdY0GmYatoT6WmRJ6j_2VR0S9YYYv0uIlBEu-8XcLXKXjB2O1PvYKKdAAq1xy_pXSpzc3u3BG8Ol0xcbsd5POOIsS0mpnfT4ngxxhnxWr08btIHrt6PERNn7O5I2y3uaC3H61v2Gx4PrqRYxnIIrq4TwzOFHdNcx-HBihRWgWEs-_hJD_wakiaoC4GQlcVWB5wcQp4XT7jdbJSCYaAOIpmzLGufd1q8iyuNfHqOQS00Htd0uqkQfUeHTmxpb2pq93qU_ZFVtTIr7o7_2Vt&amp;v=404&amp;_=1',
   },
 ];
-const getMallNav = [
+const getMall = [
   {
     icon:
       'https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/20983/16/10753/6124/5c8a16aaE5d6b15d7/01e0e818a7505267.png.webp',
@@ -86,6 +86,6 @@ const getMallNav = [
 module.exports = () => {
   return {
     getHomeCarousel,
-    getMallNav,
+    getMall,
   };
 };

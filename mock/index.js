@@ -29,15 +29,16 @@ module.exports = () => {
   const productMockData = product();
 
   var mockData = Mock.mock({
+    // home page
     getHomeCarousel: successWrap(homeMockData.getHomeCarousel),
-    getMallNav: successWrap(homeMockData.getMallNav),
-    //user
+    getMall: successWrap(homeMockData.getMall),
+    // user
     getUserInfo: successWrap(userMockData.getUserInfo),
     login: successWrap(userMockData.login),
     logout: successWrap(userMockData.logout),
     getFirstCategories: successWrap(searchMockData.getFirstCategories),
     getSecondCategories: successWrap(searchMockData.getSecondCategories),
-    //product
+    // product
     getProductList: successWrap(productMockData.getProductList),
   });
   // 返回的mockData会作为json-server的数据

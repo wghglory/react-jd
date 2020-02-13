@@ -4,6 +4,6 @@ export async function getHomeCarouselRequest() {
   return await request(prefix + 'getHomeCarousel');
 }
 
-export async function getMallNavRequest() {
-  return await request(prefix + 'getMallNav');
+export async function getMallRequest() {
+  return await request(prefix + 'getMall');
 }

@@ -39,7 +39,7 @@ module.exports = () => {
     getFirstCategories: successWrap(searchMockData.getFirstCategories),
     getSecondCategories: successWrap(searchMockData.getSecondCategories),
     // product
-    getProductList: successWrap(productMockData.getProductList),
+    getProducts: successWrap(productMockData.getProducts),
   });
   // 返回的mockData会作为json-server的数据
   return mockData;

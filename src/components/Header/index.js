@@ -14,7 +14,7 @@ export default function Header(props) {
       {history ? (
         <i className='iconfont icon-jiantou-copy' onClick={goBack} />
       ) : (
-        <Link to='/home'>
+        <Link to='/home' style={{ lineHeight: '34px' }}>
           <i className='iconfont icon-jiantou-copy' />
         </Link>
       )}

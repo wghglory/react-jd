@@ -3,14 +3,14 @@ import thunk from 'redux-thunk';
 
 import homeReducer from './homeReducer';
 import userReducer from './userReducer';
-import productListReducer from './productListReducer';
+import productReducer from './productReducer';
 import categoryReducer from './categoryReducer';
 
 const store = createStore(
   combineReducers({
     home: homeReducer,
     user: userReducer,
-    productList: productListReducer,
+    products: productReducer,
     category: categoryReducer,
   }),
   applyMiddleware(thunk),

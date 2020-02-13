@@ -10,7 +10,7 @@ export default function SearchInput(props) {
   const { isAuthenticated } = user;
 
   const toSearchPage = () => {
-    history.push('/productList');
+    history.push('/products');
   };
 
   // if clicking search input, call setShowSearchPage and show search result page
